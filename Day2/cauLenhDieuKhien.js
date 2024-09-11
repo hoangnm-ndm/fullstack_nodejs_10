@@ -19,7 +19,9 @@
 // }
 
 let myNumber = -99;
-switch (myNumber % 2) {
+switch (Math.abs(myNumber % 2)) {
+	case -1:
+		console.log(`${myNumber} là số âm`);
 	case 0:
 		// in ra thông báo là số chẵn
 		console.log(`${myNumber} là số chẵn`);
